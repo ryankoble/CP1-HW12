@@ -12,7 +12,7 @@ In addition, I'd like to incorporate an API that would control a third variable 
 
 ## Component Parts
 
-The project consists of laptop + MIDI keyboard + javascript program + external display.
+The project consists of laptop + MIDI keyboard + Processing + external display.
 
 MIDI keyboard is plugged into laptop via a printer cable + USB-C adapter. External display is plugged into laptop via HDMI cable + USB-C adapter.
 
@@ -23,8 +23,8 @@ MIDI keyboard is plugged into laptop via a printer cable + USB-C adapter. Extern
 What did you do in each of the past four weeks?
 
 - Week 0: Write Proposal
-- Week 1:
-- Week 2:
+- Week 1: Figure out MidiBus library
+- Week 2: Connect the velocity and note values to circles that coincide with the keys
 - Week 3:
 - Week 4: Present!
 
