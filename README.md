@@ -40,4 +40,14 @@ Also upload the code that makes up your project to your repository.
 
 ## References and links
 
-Tutorials, comments, videos, magazine articles - anything you found that helps you understand your project.
+https://docs.oracle.com/javase/tutorial/sound/overview-MIDI.html
+http://www.smallbutdigital.com/projects/themidibus/
+https://docs.oracle.com/javase/tutorial/sound/index.html
+https://github.com/sparks/themidibus
+https://www.youtube.com/watch?v=995vS_pHrUk&t=147s
+https://www.youtube.com/watch?v=bUHVP2bsz34
+https://www.hypeframework.com/
+https://www.youtube.com/watch?v=QdIM_OSOGNI
+https://www.instructables.com/id/Scripting-Processing-with-MIDI/
+http://www.sojamo.de/libraries/controlP5/
+http://extrapixel.github.io/gif-animation/
