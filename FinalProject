@@ -1,0 +1,144 @@
+// SimpleMidi.pde
+
+import themidibus.*; //Import the library
+import javax.sound.midi.MidiMessage; 
+
+MidiBus myBus; 
+
+int currentRed = 0;
+int currentGreen = 0;
+int currentBlue = 0;
+int currentAlpha = 0;
+int heightA = 800;
+int heightB = 800;
+int heightC = 800;
+int heightD = 800;
+int heightE = 800;
+int heightF = 800;
+int heightG = 800;
+int heightH = 800;
+int heightI = 800;
+int heightJ = 800;
+int heightK = 800;
+int heightL = 800;
+int midiDevice  = 0;
+
+void setup() {
+  size(1280, 800);
+  MidiBus.list(); 
+  myBus = new MidiBus(this, midiDevice, 1); 
+}
+
+void draw() {
+  background(currentRed, currentGreen, currentBlue, currentAlpha);
+  
+  ellipseMode(CENTER);
+  noStroke();
+  ellipse(100, heightA, 75, 75);
+  ellipse(200, heightB, 75, 75);
+  ellipse(300, heightC, 75, 75);
+  ellipse(400, heightD, 75, 75);
+  ellipse(500, heightE, 75, 75);
+  ellipse(600, heightF, 75, 75);
+  ellipse(700, heightG, 75, 75);
+  ellipse(800, heightH, 75, 75);
+  ellipse(900, heightI, 75, 75);
+  ellipse(1000, heightJ, 75, 75);
+  ellipse(1100, heightK, 75, 75);
+  ellipse(1200, heightL, 75, 75);
+}
+
+void midiMessage(MidiMessage message, long timestamp, String bus_name) { 
+  int note = (int)(message.getMessage()[1] & 0xFF) ;
+  int vel = (int)(message.getMessage()[2] & 0xFF);
+
+  println("Bus " + bus_name + ": Note "+ note + ", vel " + vel);
+  
+  if (note == 1) {
+    currentRed = vel;
+  }
+  if (note == 2) {
+    currentBlue = vel;
+  }
+  if (note == 3) {
+    currentGreen = vel;
+  }
+  if (note == 4) {
+    currentAlpha = vel;
+  }
+  if (note == 48) {
+    heightA = 800-(vel*5);
+  }
+  if (note == 49) {
+    heightB = 800-(vel*5);
+  }
+  if (note == 50) {
+    heightC = 800-(vel*5);
+  }
+  if (note == 51) {
+    heightD = 800-(vel*5);
+  }
+  if (note == 52) {
+    heightE = 800-(vel*5);
+  }
+  if (note == 53) {
+    heightF = 800-(vel*5);
+  }
+  if (note == 54) {
+    heightG = 800-(vel*5);
+  }
+  if (note == 55) {
+    heightH = 800-(vel*5);
+  }
+  if (note == 56) {
+    heightI = 800-(vel*5);
+  }
+  if (note == 57) {
+    heightJ = 800-(vel*5);
+  }
+  if (note == 58) {
+    heightK = 800-(vel*5);
+  }
+  if (note == 59) {
+    heightL = 800-(vel*5);
+  }
+  if (note == 60) {
+    heightA = 800-(vel*5);
+  }
+  if (note == 61) {
+    heightB = 800-(vel*5);
+  } 
+  if (note == 62) {
+    heightC = 800-(vel*5);
+  }
+  if (note == 63) {
+    heightD = 800-(vel*5);
+  } 
+  if (note == 64) {
+    heightE = 800-(vel*5);
+  }
+  if (note == 65) {
+    heightF = 800-(vel*5);
+  }
+  if (note == 66) {
+    heightG = 800-(vel*5);
+  }
+  if (note == 67) {
+    heightH = 800-(vel*5);
+  }
+  if (note == 68) {
+    heightI = 800-(vel*5);
+  }
+  if (note == 69) {
+    heightJ = 800-(vel*5);
+  }
+  if (note == 70) {
+    heightK = 800-(vel*5);
+  }
+  if (note == 71) {
+    heightL = 800-(vel*5);
+  }
+  if (note == 72) {
+    heightA = 800-(vel*5);
+  }
+}
